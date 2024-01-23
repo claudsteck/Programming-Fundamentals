@@ -15,3 +15,29 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+# store my list
+my_shopping_list = ["milk", "eggs","bacon", "beer"]
+
+# store my friend's list
+friends_shopping_list = ["beer","cookies","apples"]
+
+# # combine the list
+# combined_shopping_list = my_shopping_list + friends_shopping_list
+
+# # remove the non-unique items
+# unique_list = combined_shopping_list.uniq
+
+# # alpha order
+# sorted_list = unique_list.sort
+
+# a shorter approach to the above:
+ sorted_list = (my_shopping_list + friends_shopping_list).uniq.sort
+
+# write the items to screen
+puts "Buy #{sorted_list [0]}"
+puts "Buy #{sorted_list [1]}"
+puts "Buy #{sorted_list [2]}"
+puts "Buy #{sorted_list [3]}"
+puts "Buy #{sorted_list [4]}"
+puts "Buy #{sorted_list [5]}"

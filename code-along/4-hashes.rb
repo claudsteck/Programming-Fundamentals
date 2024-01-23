@@ -7,3 +7,27 @@
 # Accessing data from the hash
 
 # More Complex Hashes
+
+# My profile, stored in memory
+me ={
+"name" => {
+    "first" =>"Claudia",
+    "last" => "Steck"
+}, 
+"location" => {
+    "city" =>"Evanston", 
+"state" => "Illinois"
+},
+"Birthday" => "5-15"
+}
+
+"timeline" => [
+    {"status" => "Eating lunch tacos", "posted" => "12 pm"},
+    {"status" => "ENTR - 451", "posted" => "8:30 AM"}]
+
+
+# put me to screen
+# puts me 
+
+# put my name to screen
+puts me ["timeline"] [0] ["status"]

@@ -14,6 +14,7 @@ bitcoin_data = JSON.parse(response)
 
 # EXERCISE
 # Ask the user for the current amount of Bitcoin that they own.
+
 # Using the Ruby hash `bitcoin_data`, display a summary of
 # Bitcoin data for the user. Something like the output below.
 
@@ -30,3 +31,15 @@ bitcoin = bitcoin.to_f
 
 # 3. inspect the bitcoin_data hash
 # puts bitcoin_data
+ 
+#dig through the bitcoin_data to find the conversion rate (rate_float)
+conversion_rate = bitcoin_data["bpi"]["USD"] ["rate_float"]
+
+# Put the conversion rate on screen
+puts "One BTC is worth: #{conversion_rate} USD"
+
+# Multiply the conversion rate by the number of bitcoin
+value_of_users_BTC = bitcoin * conversion_rate
+
+# write the value of the user's bitcoin
+puts "You have BTC worth #{value_of_users_BTC} USD"
